@@ -1,0 +1,9 @@
+runtime: python38  
+
+handlers:
+- url: /static
+  static_dir: www/static  
+
+- url: /.*
+  static_files: www/index.html
+  upload: www/index.html
